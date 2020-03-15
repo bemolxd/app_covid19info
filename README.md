@@ -1,7 +1,7 @@
 # COVID-19 Info
 Prosta aplikacja na Androida oparta o [COVID-19 API](https://github.com/maxtomczyk/covid19-api) by @maxtomczyk
 
-![COVID-19 Info app](https://imgur.com/a/SNilPjO)
+![COVID-19 Info app](https://i.imgur.com/aDkgcOq.png)
 
 ## Funckjonalność aplikacji
 * Aplikacja pozwala sprawdzić dane odnośnie ilośći zakażonych osób, śmierci, etc. globalnie
