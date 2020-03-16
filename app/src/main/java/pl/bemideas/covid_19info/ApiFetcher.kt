@@ -22,9 +22,9 @@ data class Cases(
     val activeCases: Int,
     val deaths: Int,
     val infections: Int,
-    val mortalityRate: Double,
+    val mortalityRate: Float,
     val recovered: Int,
-    val revoveryRate: Double
+    val revoveryRate: Float
 )
 
 class ApiFetcher {
@@ -67,14 +67,11 @@ class ApiFetcher {
         return String(getUrlBytes(urlSpec))
     }
 
-    fun getJSONString(): String{
+    fun getJSONString(countryCode: String): String{
         var jsonString = "Something went wrong..."
 
         try {
-            var url: String = "https://covid-19-data.herokuapp.com/api/cases/total" //instead of 'total': ISO 3166-1 alpha-3 country code
-//                              Uri.parse("https://covid-19-data.herokuapp.com/api/cases/total")
-//                                  .buildUpon()
-//                                  .build().toString()
+            var url: String = "https://covid-19-data.herokuapp.com/api/cases/"+countryCode //countryCode: "total" or ISO 3166-1 alpha-3 country code
             jsonString = getUrlString(url)
 
         } catch (je: JSONException){
