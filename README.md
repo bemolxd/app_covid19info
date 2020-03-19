@@ -1,5 +1,5 @@
 # COVID-19 Info
-![status](https://img.shields.io/badge/status-dev-yellow) ![version](https://img.shields.io/badge/version-1.2.0--rc1-brightgreen) ![platform](https://img.shields.io/badge/platform-Android-success)
+![status](https://img.shields.io/badge/status-dev-yellow) ![version](https://img.shields.io/badge/version-1.2.0--rc1-success) ![platform](https://img.shields.io/badge/platform-Android-success)
 
 Prosta aplikacja na Androida oparta o [COVID-19 API](https://github.com/maxtomczyk/covid19-api) by @maxtomczyk
 
