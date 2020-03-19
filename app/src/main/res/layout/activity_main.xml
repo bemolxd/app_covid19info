@@ -66,6 +66,14 @@
                 android:text="Dane dla Polski:"
                 android:textColor="#ffff"
                 android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/refreshBtn"
+                android:layout_marginLeft="180dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_refresh_black_24dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,6 +175,9 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
+        android:id="@+id/worldCard"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginBottom="22dp"
@@ -221,5 +232,62 @@
 
     </LinearLayout>
     </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="bottom|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktualności na stronach:"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/whoBtn"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="8dp"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/who"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mzBtn"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="180dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_margin="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mz"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 
 </LinearLayout>
